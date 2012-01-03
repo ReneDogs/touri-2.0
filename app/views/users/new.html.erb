@@ -23,16 +23,16 @@
 <!-- Begin MailChimp Signup Form -->
 <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:16px Helvetica,Arial,sans-serif; }
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 <div id="mc_embed_signup">
-<form action="http://heroku.us4.list-manage.com/subscribe/post?u=bbd480e377b038bdde609da95&amp;id=31475e6375" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-	<h1>Anmeldung</h1>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<form action="http://heroku.us4.list-manage1.com/subscribe/post?u=bbd480e377b038bdde609da95&amp;id=31475e6375" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+	<h2>Einschreiben in die Infoliste</h2>
+<div class="indicates-required"><span class="asterisk">*</span> ben&ouml;tigt</div>
 <div class="mc-field-group">
-	<label for="mce-MMERGE3">Anrede  <span class="asterisk">*</span>
+	<label for="mce-MMERGE3" border ="2">Anrede  <span class="asterisk">*</span>
 </label>
 	<select name="MMERGE3" class="required" id="mce-MMERGE3">
 	<option value=""></option>
@@ -121,7 +121,7 @@ function mce_init_form(){
       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://heroku.us4.list-manage2.com/subscribe/post-json?u=bbd480e377b038bdde609da95&id=31475e6375&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+      options = { url: 'http://heroku.us4.list-manage1.com/subscribe/post-json?u=bbd480e377b038bdde609da95&id=31475e6375&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
                         $('.datefield','#mc_embed_signup').each(
